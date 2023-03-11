@@ -1,21 +1,31 @@
 
-public class LinkedList {
-    public static void display(){
-        System.out.println("Welcome to Data Structure Problems using Java Generics");
-    }
-    public static void main(String[] args) {
-        display();
-        Node firstNode = new Node(56);
-        Node secondNode = new Node(30);
-        Node thirdNode = new Node(70);
-        Node head = firstNode;
-        firstNode.next = secondNode;
-        secondNode.next = thirdNode;
+public class LinkedList<T> {
+    public Node<T> head;
+    public Node<T> tail;
 
-        Node temp = head;
-        while (temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
+    public void push(T data) {
+        Node<T> newNode = new Node<>(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.setNext(head);
+            head = newNode;
         }
     }
+    public void show() {
+        if (head == null) {
+            System.out.println("Linked list is Empty");
+        } else {
+            Node<T> temp = head;
+            while (temp != null) {
+                System.out.print(temp.getData() + " ");
+                temp = temp.getNext();
+            }
+            System.out.println();
+        }
+
+    }
+
+
 }
