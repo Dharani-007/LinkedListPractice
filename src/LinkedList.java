@@ -51,4 +51,13 @@ public class LinkedList<T> {
         tail.setNext(null);
         return data;
     }
+    public Node<T> search(T searchData){
+        Node<T> temp = head;
+        while(temp != null) {
+            if(temp.getData().equals(searchData))
+                return temp;
+            temp = temp.getNext();
+        }
+        return null;
+    }
 }
