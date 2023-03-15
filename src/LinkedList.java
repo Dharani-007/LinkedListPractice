@@ -35,5 +35,4 @@ public class LinkedList<T> {
         }
     }
 
-
 }
