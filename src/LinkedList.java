@@ -2,6 +2,7 @@ public class LinkedList<T> {
     public Node<T> head;
     public Node<T> tail;
 
+
     public void push(T data) {
         Node<T> newNode = new Node<>(data);
         if (head == null) {
@@ -22,6 +23,16 @@ public class LinkedList<T> {
                 temp = temp.getNext();
             }
             System.out.println();
+        }
+    }
+    public void insert(T data) {
+        Node<T> newNode = new Node<>(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.setNext(tail);
+            tail = newNode;
         }
     }
     public void append(T data) {
@@ -70,7 +81,23 @@ public class LinkedList<T> {
             searchedMyNode.setNext(newMyNode);
             return true;
         }
-
     }
-
+    public boolean popSearchNode(T searchDeleteData)
+    {
+        Node<T> deleteNode=search(searchDeleteData);
+        Node<T> temp = head;
+        while (temp!=null) {
+            if (temp == deleteNode){
+                head = deleteNode.getNext();
+                break;
+            }
+            else if (temp.getNext() == deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+    }
 }
