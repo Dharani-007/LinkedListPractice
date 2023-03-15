@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ba4e60-1197-44f1-a023-0936ed742885" name="Changes" comment="Added : Lets create a  simple Linked List   of 56, 30 and 70">
+    <list default="true" id="59ba4e60-1197-44f1-a023-0936ed742885" name="Changes" comment="Added : Ability to create Linked List by adding 30 and 56 to 70">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
     </list>
@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaClassFindUsagesOptions.isSearchForTextOccurrences&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -59,6 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1678550811645</updated>
       <workItem from="1678550813747" duration="2109000" />
+      <workItem from="1678651001666" duration="1155000" />
+      <workItem from="1678788960355" duration="639000" />
+      <workItem from="1678896312494" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="Added : Lets create a  simple Linked List   of 56, 30 and 70">
       <created>1678562861782</created>
