@@ -60,4 +60,17 @@ public class LinkedList<T> {
         }
         return null;
     }
+    public boolean searchAndInsert(T searchData, T insertData) {
+        Node<T> newMyNode = new Node(insertData);
+        Node<T> searchedMyNode = search(searchData);
+        if (searchedMyNode == null)
+            return false;
+        else {
+            newMyNode.setNext(searchedMyNode.getNext());
+            searchedMyNode.setNext(newMyNode);
+            return true;
+        }
+
+    }
+
 }
